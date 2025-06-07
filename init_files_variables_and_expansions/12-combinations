@@ -1,2 +1,2 @@
 #!/bin/bash
-echo [[:lower:]]a{a..z}
+echo {a..z}{a..z}
