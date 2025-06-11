@@ -20,4 +20,5 @@ echo "bad luck from Italy"
 echo "$a"
 ;;
 esac
+((a++))
 done
