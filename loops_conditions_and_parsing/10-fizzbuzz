@@ -3,11 +3,11 @@
 a=1
 while [ $a -le 100 ]
 do
-if [ $a % 3 == 0 && $a % 5 == 0 ]; then
+	if (( $a % 3 == 0 && $a % 5 == 0 )); then
 echo "FizzBuzz"
-elif [ $a % 3 == 0 ]; then
+elif (( $a % 3 == 0 )); then
 echo "Fizz"
-elif [ $a % 5 == 0 ]; then 
+elif (( $a % 5 == 0 )); then 
 echo "Buzz"
 else
 echo "$a"
