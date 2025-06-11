@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-#displays Best School 10 times.a=o
+#displays Best School 10 times.
+
+a=o
 until [ $a -ge 10 ]
 do
 echo "Best School"
