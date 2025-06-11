@@ -11,6 +11,7 @@ elif (( $a % 5 == 0 )); then
 echo "Buzz"
 else
 echo "$a"
+	fi
 ((a++))
 done
 
