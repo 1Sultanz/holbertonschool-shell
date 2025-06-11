@@ -4,10 +4,10 @@
 a=0
 while [ $a -lt 10 ]
 do 
+echo "Best School"
 if [ $a == 8 ]
 then 
 echo "Hi"
 fi 
-echo "Best School"
 ((a++)
 done
