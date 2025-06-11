@@ -2,7 +2,7 @@
 #Clock
 a=0
 b=$a
-while [ $b -lt 12 ] 
+while [ $b -le 12 ] 
 do
 if [ $a -eq 60 ]; then
 ((b++))
@@ -53,5 +53,4 @@ echo "$a"
 ;;
 esac
 ((a++))
-done
-head -n 70 clock.txt
+done | head -n 70
