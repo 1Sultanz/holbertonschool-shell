@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Clock: Sənin strukturla, istənilən formatda
 
-a=1    # minute
 b=0    # hour
 
 while [ $b -le 12 ]
