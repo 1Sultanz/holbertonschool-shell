@@ -2,11 +2,11 @@
 # Clock: S~Ynin strukturla, ist~Ynil~Yn formatda
 saat=0
 while [ $saat -le 12 ]; do
-        deqiqe=1
+        echo "Hour: $saat"
+       	deqiqe=1
         while [ $deqiqe -lt 60 ]; do
                 echo "$deqiqe"
                 ((deqiqe++))
         done
-        echo "Hour: $saat"
         ((saat++))
 done'
