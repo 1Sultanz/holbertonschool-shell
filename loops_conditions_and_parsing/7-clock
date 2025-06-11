@@ -5,14 +5,12 @@ b=0    # hour
 
 while [ $b -le 12 ]
 do
-  echo "Hour: $b"
-
-  a=1
+	echo "Hour: $b"
+	a=1
   while [ $a -le 59 ]
   do
-    echo "$a"
-    ((a++))
+	  echo "$a"
+	  ((a++))
   done
-
   ((b++))
 done | head -n 70
