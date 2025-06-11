@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 #displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
 
-a=o
-while [ $ -lt 10 ]
+a=0
+while [ $a -lt 10 ]
 do 
 if [ $a == 9 ]
 then 
-continue 
 echo "Hi"
 fi 
 echo "Best School"
