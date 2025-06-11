@@ -1,56 +1,34 @@
 #!/usr/bin/env bash
-#Clock
-a=0
-b=$a
-while [ $b -le 12 ] 
+# Clock
+
+a=1    
+b=0    
+
+while [ $b -le 12 ]
 do
-if [ $a -eq 60 ]; then
-((b++))
-a=0
-fi 
-case $b in
-0)
-echo "Hour:0"
-;;
-1)
-echo "Hour:1"
-;;
-2)
-echo "Hour:2"
-;;
-3)
-echo "Hour:3"
-;;
-4)
-echo "Hour:4"
-;;
-5)
-echo "Hour:5"
-;;
-6)
-echo "Hour:6"
-;;
-7)
-echo "Hour:7"
-;;
-8)
-echo "Hour:8"
-;;
-9)
-echo "Hour:9"
-;;
-10)
-echo "Hour:10"
-;;
-11)
-echo "Hour:11"
-;;
-12) 
-echo "Hour:12"
-;;
-*)
-echo "$a"
-;;
-esac
-((a++))
+  
+  case $b in
+    0) echo "Hour:0" ;;
+    1) echo "Hour:1" ;;
+    2) echo "Hour:2" ;;
+    3) echo "Hour:3" ;;
+    4) echo "Hour:4" ;;
+    5) echo "Hour:5" ;;
+    6) echo "Hour:6" ;;
+    7) echo "Hour:7" ;;
+    8) echo "Hour:8" ;;
+    9) echo "Hour:9" ;;
+    10) echo "Hour:10" ;;
+    11) echo "Hour:11" ;;
+    12) echo "Hour:12" ;;
+  esac
+
+  while [ $a -le 59 ]
+  do
+    echo "$a"
+    ((a++))
+  done
+
+  ((b++))
 done | head -n 70
+
