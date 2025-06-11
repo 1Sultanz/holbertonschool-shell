@@ -9,4 +9,4 @@ while [ $saat -le 12 ]; do
                 ((deqiqe++))
         done
         ((saat++))
-done'
+done
