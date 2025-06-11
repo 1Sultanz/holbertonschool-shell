@@ -14,4 +14,3 @@ echo "$a"
 	fi
 ((a++))
 done
-
