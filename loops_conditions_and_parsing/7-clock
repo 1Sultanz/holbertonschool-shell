@@ -47,11 +47,11 @@ echo "Hour:11"
 ;;
 12) 
 echo "Hour:12"
+;;
 *)
 echo "$a"
 ;;
-
 esac
 ((a++))
-head -n 70 clock
 done
+head -n 70 clock.txt
