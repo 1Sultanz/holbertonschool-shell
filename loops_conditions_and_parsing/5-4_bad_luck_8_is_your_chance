@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#4 bad luck, 8 is your chance
+a=0
+while [ $a -lt 10 ]
+do 
+if [ $a -eq 3 ]; then
+echo "bad luck'
+elif [ $a -eq 7 ]; then
+echo "good luck"
+else 
+echo "Best School"
+fi 
+done
