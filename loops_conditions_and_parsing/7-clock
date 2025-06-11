@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
-# Clock: Sənin strukturla, istənilən formatda
-
-b=0    # hour
-
-while [ $b -le 12 ]
-do
-	echo "Hour: $b"
-	a=1
-  while [ $a -le 59 ]
-  do
-	  echo "$a"
-	  ((a++))
-  done
-  ((b++))
-done | head -n 70
+# Clock: S~Ynin strukturla, ist~Ynil~Yn formatda
+saat=0
+while [ $saat -le 12 ]; do
+        deqiqe=1
+        while [ $deqiqe -lt 60 ]; do
+                echo "$deqiqe"
+                ((deqiqe++))
+        done
+        echo "Hour $saat"
+        ((saat++))
+done'
