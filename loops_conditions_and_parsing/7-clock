@@ -7,6 +7,6 @@ while [ $saat -le 12 ]; do
                 echo "$deqiqe"
                 ((deqiqe++))
         done
-        echo "Hour $saat"
+        echo "Hour: $saat"
         ((saat++))
 done'
