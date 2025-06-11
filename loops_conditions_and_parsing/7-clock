@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Clock
+# Clock using a=minute, b=hour, your logic
 
-a=1    
-b=0    
+a=1    # minute 1-dən başlamalıdır
+b=0    # hour
 
 while [ $b -le 12 ]
 do
-  
+  # saatı case ilə çap et
   case $b in
     0) echo "Hour:0" ;;
     1) echo "Hour:1" ;;
@@ -23,6 +23,8 @@ do
     12) echo "Hour:12" ;;
   esac
 
+  # dəqiqələri 1-dən 59-a qədər çap et
+  a=1
   while [ $a -le 59 ]
   do
     echo "$a"
