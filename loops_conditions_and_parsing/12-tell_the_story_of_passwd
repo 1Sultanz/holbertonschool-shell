@@ -1,0 +1,6 @@
+#!/usr/bin/env bash 
+#Tell the story of passwd
+while IFS=':' read -r username group_id home_directory shell password info uid
+do 
+echo "The user $username is part of the $group_id gang, lives in $home_directory and rides $shell. $uid 's place is protected by the passcode , more info about the user here: $info"
+done
