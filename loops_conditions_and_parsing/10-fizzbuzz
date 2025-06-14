@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
-# FizzBuzz - same line output
-a=1
-while [ $a -le 100 ]
+# FizzBuzz - List format
+
+for ((i = 1; i <= 100; i++))
 do
-    if (( a % 3 == 0 && a % 5 == 0 )); then
-        printf "FizzBuzz "
-    elif (( a % 3 == 0 )); then
-        printf "Fizz "
-    elif (( a % 5 == 0 )); then
-        printf "Buzz "
+    if (( i % 3 == 0 && i % 5 == 0 )); then
+        echo "FizzBuzz"
+    elif (( i % 3 == 0 )); then
+        echo "Fizz"
+    elif (( i % 5 == 0 )); then
+        echo "Buzz"
     else
-        printf "$a "
+        echo "$i"
     fi
-    ((a++))
 done
-printf "\n"
